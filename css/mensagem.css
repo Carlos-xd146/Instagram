@@ -1,0 +1,60 @@
+ /* cores customizadas para parecere com instagram real */
+    :root{
+        --instagram-bg: #fafafa;
+        --instagram-white: #ffffff;
+        --instagram-border: #dbdbdb;
+        --instagram-text: #262626;
+        --instagram-text-light: #8e8e8e;
+        --instagram-blue: #0095f6;
+        --instagram-message-bg: #efefef;
+        --instagram-user-message: #0095f6;
+    }
+
+    body{
+        background-color: var(--instagram-bg) !important;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif, !important;
+    }
+
+    .instagram-border{
+        border-color: var(--instagram-border) !important;
+    }
+
+    .instagram-text {
+        color: var(--instagram-text) !important;
+    }
+
+    .instagram-text-light {
+        color: var(--instagram-text-light) !important;
+    }
+
+    .instagram-blue {
+        color: var(--instagram-blue) !important;
+    }
+
+    .message-received {
+        background-color: var(--instagram-message-bg) !important;
+        border: 1px solid var(--instagram-border) !important;
+    }
+
+    .message-sent {
+        background-color: var(--instagram-user-message) !important;
+        color: white !important;
+    }
+
+    .chat-input {
+        border: 1px solid var(--instagram-border) !important;
+        background-color: var(--instagram-white) !important;
+    }
+
+    .sidebar-nav {
+        background-color: var(--instagram-white) !important;
+        border-right: 1px solid var(--instagram-border) !important;
+    }
+
+    .conversation-item:hover {
+        background-color: #f5f5f5 !important;
+    }
+
+    .conversation-selected {
+        background-color: #f0f0f0 !important;
+    }

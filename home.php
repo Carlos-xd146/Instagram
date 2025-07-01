@@ -53,7 +53,7 @@
             <div class="card mb-4 border-0 shadow-sm">
               <!-- Header -->
               <div class="card-header d-flex align-items-center gap-2 bg-white border-0 py-3">
-                <img src="" 
+                <img src="./img/perfil.jpg" 
                      alt="Avatar do usuario"
                      class="rounded-circle img-fluid"
                      width="48" height="48">
@@ -62,7 +62,7 @@
               </div>
               
               <!-- Post image -->
-              <img src="" 
+              <img src="./img/montreal.webp" 
                    alt=""
                    class="card-img-top">
               
