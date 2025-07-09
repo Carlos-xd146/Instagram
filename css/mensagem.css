@@ -10,6 +10,8 @@
         --instagram-user-message: #0095f6;
     }
 
+    
+    
     body{
         background-color: var(--instagram-bg) !important;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif, !important;

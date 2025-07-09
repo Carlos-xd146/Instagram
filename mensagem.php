@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- Icones do bootstrap, como lupa etc -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
     <link rel="stylesheet" href="./css/mensagem.css">
 </head>
 
@@ -63,8 +64,8 @@
                     <!-- Conversa 2: Gabriela lima -->
                     <div class="p-3 convesation-item" style="border-bottom: 1px solid var(--instagram-border);">
                         <div class="d-flex align-items-center">
-                            <div class="bg-primary rounded-circle me-3 d-flex align-items-center justify-content-center"
-                                style="width: 50px; heigth: 50px">
+                            <div class="bg-warning rounded-circle me-3 d-flex align-items-center justify-content-center"
+                                style="width: 30px; heigth: 30px;">
                                 <i class="bi bi-person-fill text-white"></i>
                             </div>
                             <div>
@@ -76,7 +77,7 @@
                     <!-- Conversa 3: Pedro Henrique -->
                     <div class="p-3 convesation-item" style="border-bottom: 1px solid var(--instagram-border);">
                         <div class="d-flex align-items-center">
-                            <div class="bg-primary rounded-circle me-3 d-flex align-items-center justify-content-center"
+                            <div class="bg-success rounded-circle me-3 d-flex align-items-center justify-content-center"
                                 style="width: 50px; heigth: 50px">
                                 <i class="bi bi-person-fill text-white"></i>
                             </div>
@@ -89,7 +90,7 @@
                     <!-- Conversa 4: João Victor -->
                     <div class="p-3 convesation-item" style="border-bottom: 1px solid var(--instagram-border);">
                         <div class="d-flex align-items-center">
-                            <div class="bg-primary rounded-circle me-3 d-flex align-items-center justify-content-center"
+                            <div class="bg-info rounded-circle me-3 d-flex align-items-center justify-content-center"
                                 style="width: 50px; heigth: 50px">
                                 <i class="bi bi-person-fill text-white"></i>
                             </div>
@@ -102,7 +103,7 @@
                     <!-- Conversa 5: Larissa Oliveira (SELECIONADA) -->
                     <div class="p-3 convesation-item" style="border-bottom: 1px solid var(--instagram-border);">
                         <div class="d-flex align-items-center">
-                            <div class="bg-primary rounded-circle me-3 d-flex align-items-center justify-content-center"
+                            <div class="bg-danger rounded-circle me-3 d-flex align-items-center justify-content-center"
                                 style="width: 50px; heigth: 50px">
                                 <i class="bi bi-person-fill text-white"></i>
                             </div>
@@ -115,7 +116,7 @@
                     <!-- Conversa 6: Rafael Costa -->
                     <div class="p-3 convesation-item" style="border-bottom: 1px solid var(--instagram-border);">
                         <div class="d-flex align-items-center">
-                            <div class="bg-primary rounded-circle me-3 d-flex align-items-center justify-content-center"
+                            <div class="bg-secondary rounded-circle me-3 d-flex align-items-center justify-content-center"
                                 style="width: 50px; heigth: 50px">
                                 <i class="bi bi-person-fill text-white"></i>
                             </div>
@@ -128,7 +129,7 @@
                     <!-- Conversa 7: Camila Ferreira -->
                     <div class="p-3 convesation-item" style="border-bottom: 1px solid var(--instagram-border);">
                         <div class="d-flex align-items-center">
-                            <div class="bg-primary rounded-circle me-3 d-flex align-items-center justify-content-center"
+                            <div class="bg-dark rounded-circle me-3 d-flex align-items-center justify-content-center"
                                 style="width: 50px; heigth: 50px">
                                 <i class="bi bi-person-fill text-white"></i>
                             </div>
@@ -214,11 +215,85 @@
                     </div>
 
                     <!-- MENSAGEM ENVIADA -->
+                    <div class="d-flex justify-content-end mb-3">
+                        <div>
+                            <div class="message-sent rounded p-2" style="max-width: 300px">
+                                <span>Claro! Voy mandar agora no WhatsApp 📚</span>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Espaço entre mensagens -->
+                    <div>
+                        <small class="instagram-text-light">15:45</small>
+                    </div>
+
+
+                    <!-- Mensagem recebida -->
+                    <div class="d-flex mb-3">
+                        <div class="me-2">
+                            <div classs="bg-danger rounded-circle d-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                                <i class="bi bi-person-fill text-white fs-6"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="message-received rounded p-2" style="max-width: 300px:">
+                                <span class="instagram-text">Obrigada mesmo! Vou conseguir entregar no prazo agora 🙏</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MENSAGEM ENVIADA -->
+                    <div class="d-flex justify-content-end mb-3">
+                        <div>
+                            <div class="message-sent rounded p-2" style="max-width: 300px">
+                                <span>Imagina! Sempre que precisar é so falar! 😊</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mensagem recebida -->
+                    <div class="d-flex mb-3">
+                        <div class="me-2">
+                            <div classs="bg-danger rounded-circle d-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                                <i class="bi bi-person-fill text-white fs-6"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="message-received rounded p-2" style="max-width: 300px:">
+                                <span class="instagram-text">Você é demais! Vamos sair no fim de semana para comemorar? 🎉</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MENSAGEM ENVIADA -->
+                    <div class="d-flex justify-content-end mb-3">
+                        <div>
+                            <div class="message-sent rounded p-2" style="max-width: 300px">
+                                <span>Bora sim! Vamos no shopping ou no cinema? 🍿</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Barra de input para nova mensagem -->
+                <div class="position-fixed bottom-0 p-3" style="right: 0; left: 41:66%; background-color: var(--instagram-white); border-top: 1px solid var(--instagram-border);">
+                    <div class="d-flex align-items-center w-100">
+                        <!-- icone de emoki/smile -->
+                        <i class="bi bi-emoji-smile me-3 fs-5 instagram-text-light"></i>
+                        <!-- Campo de input da mensagem -->
+                        <input type="text" class="form-control chat-input rounded-pill flex-grow-1 py-2" placeholder="Mensagem..." style="border: 1px solid var(--instagram-border);">
+                        <!-- icone de envio -->
+                        <i class="bi bi-send ms-3 fs-5 instagram-blue"></i>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+
+    <!-- Script do Bootstrap (JavaScript) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
