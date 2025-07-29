@@ -406,18 +406,72 @@
 
                             <!-- Texto de ajuda -->
                             <div class="form-text text-muted">
-                                Conte a
+                                Conte a história da sua foto! Use hashtags (#) para alcançar mais pessoas.
 
                             </div>
                         </div>
 
-                    </form>
+                        <!-- Campo para localizaçao -->
+                        <div class="mb-3">
+                            <!-- Label para localizaçao -->
+                            <label for="localizacaoPost" class="form-label">
+                                <!-- Icone de localizaçao -->
+                                <i class="bi bi-geo-alt"></i>
+                                Localização (opcional)
+                            </label>
 
+                            <!-- Campo de texto simples -->
+                            <input type="text" class="form-control" id="localizacaoPost" placeholder="Ex: São Paulo, Brasil">
+
+                            <!-- Texto de ajuda -->
+                            <div class="form-text text-muted">
+                                Adicione onde a foto foi tirada
+                            </div>
+                        </div>
+
+                        <!-- Prévia da imagem selecionada -->
+                        <!-- d-none esconde o elemento inicialmente -->
+                        <div class="mb-3 d-none" id="previaImagem">
+                            <!-- Titulo da previa -->
+                            <label class="form-label">
+                                <!-- icone de olho -->
+                                <i class="bi bi-eye"></i>
+                                Prévia da Imagem
+                            </label>
+
+                            <!-- Container da previa -->
+                            <!-- text-center centraliza o conteudo -->
+                            <div class="text-center">
+                                <!-- Imagem de previa -->
+                                <!-- img-fluid torna responsiva, rounded adiciona bordas arredondadas -->
+                                <img id="imagemPrevia" src="" alt="Prévia" class="img-fluid rounded" style="max-height: 300px;">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Rodapé do modal -->
+                <!-- modal-footer é a classe para parte inferior -->
+                <div class="modal-footer">
+                    
+                    <!-- Botao para cancelar -->
+                    <!-- btn-secondary é um botao cinza -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <!-- Icone de X -->
+                        <i class="bi bi-x-circle"></i>
+                        Cancelar
+                    </button>
+
+                    <!-- Botao para publicar o post -->
+                    <!-- btn-primary é um botao azul -->
+                    <button type="button" class="btn btn-primary">
+                        <!-- Icone de check -->
+                        <i class="bi bi-check-circle"></i>
+                        Publicar Post
+                    </button>
                 </div>
             </div>
-
         </div>
-
     </div>
 
     <!-- script do bootstrap (necessario para componentes interativos) -->
