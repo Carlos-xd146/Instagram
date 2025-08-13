@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Perfil</title>
+    <link rel="icon" href="img/logo.png">
     <!-- Estilos do bootstrap geral -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- Icones do bootstrap, como lupa etc -->
@@ -40,9 +41,11 @@
 
                 <!-- Botao de criar post (modal) -->
                 <!-- data-bs-toggle e data-bs-target sao atributos do bootstrap para abrir modals-->
-                <button class="btn btn-primary p-2 mb-2" data-bs-toggle="modal" data-bs-target="#criarPostModal">
+                <button class="btn p-2 mb-2" data-bs-toggle="modal" data-bs-target="#criarPostModal">
                     <!-- Icone de mais -->
-                    <i class="bi bi-plus-circle"></i>
+                    <i class="bi bi-plus-circle fs-4"></i>
+
+                    
     
                 </button>
             </nav>

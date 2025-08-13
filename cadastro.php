@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram - Cadastre-se</title>
+    <link rel="icon" href="img/logo.png">
     <!-- Estilos do bootstrap geral -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- Icones do bootstrap, como lupa etc -->

@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensagem</title>
+    <link rel="icon" href="img/logo.png">
     <!-- Estilos do bootstrap geral -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- Icones do bootstrap, como lupa etc -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    
+
     <link rel="stylesheet" href="./css/mensagem.css">
 </head>
 
@@ -27,7 +28,8 @@
                     <!-- Icone de casa (home/inicio) -->
                     <i class="bi bi-house fs-4 instagram-text mb-4"></i>
                     <!-- Icone de mensagem (aviao de papel) -->
-                    <i class="bi bi-send fs-4 instagram-blue"></i>
+                    <i class="bi bi-send fs-4 instagram-blue mb-4"></i>
+                    
                 </div>
             </div>
 
@@ -207,9 +209,12 @@
                             </div>
                             <!-- Reaçoes de emoji -->
                             <div class="d-flex">
-                                <div class="bg-warning rounded-circle text-center me-1" style="width: 20px; height: 20px; line-height: 20px; font-size: 12px">❤️</div>
-                                <div class="bg-warning rounded-circle text-center me-1" style="width: 20px; height: 20px; line-height: 20px; font-size: 12px">❤️</div>
-                                <div class="bg-warning rounded-circle text-center me-1" style="width: 20px; height: 20px; line-height: 20px; font-size: 12px">❤️</div>
+                                <div class="bg-warning rounded-circle text-center me-1"
+                                    style="width: 20px; height: 20px; line-height: 20px; font-size: 12px">❤️</div>
+                                <div class="bg-warning rounded-circle text-center me-1"
+                                    style="width: 20px; height: 20px; line-height: 20px; font-size: 12px">❤️</div>
+                                <div class="bg-warning rounded-circle text-center me-1"
+                                    style="width: 20px; height: 20px; line-height: 20px; font-size: 12px">❤️</div>
                             </div>
                         </div>
                     </div>
@@ -232,13 +237,15 @@
                     <!-- Mensagem recebida -->
                     <div class="d-flex mb-3">
                         <div class="me-2">
-                            <div classs="bg-danger rounded-circle d-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                            <div classs="bg-danger rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 30px; height: 30px;">
                                 <i class="bi bi-person-fill text-white fs-6"></i>
                             </div>
                         </div>
                         <div>
                             <div class="message-received rounded p-2" style="max-width: 300px:">
-                                <span class="instagram-text">Obrigada mesmo! Vou conseguir entregar no prazo agora 🙏</span>
+                                <span class="instagram-text">Obrigada mesmo! Vou conseguir entregar no prazo agora
+                                    🙏</span>
                             </div>
                         </div>
                     </div>
@@ -251,17 +258,19 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Mensagem recebida -->
                     <div class="d-flex mb-3">
                         <div class="me-2">
-                            <div classs="bg-danger rounded-circle d-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                            <div classs="bg-danger rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 30px; height: 30px;">
                                 <i class="bi bi-person-fill text-white fs-6"></i>
                             </div>
                         </div>
                         <div>
                             <div class="message-received rounded p-2" style="max-width: 300px:">
-                                <span class="instagram-text">Você é demais! Vamos sair no fim de semana para comemorar? 🎉</span>
+                                <span class="instagram-text">Você é demais! Vamos sair no fim de semana para comemorar?
+                                    🎉</span>
                             </div>
                         </div>
                     </div>
@@ -277,12 +286,14 @@
                 </div>
 
                 <!-- Barra de input para nova mensagem -->
-                <div class="position-fixed bottom-0 p-3" style="right: 0; left: 41:66%; background-color: var(--instagram-white); border-top: 1px solid var(--instagram-border);">
+                <div class="position-fixed bottom-0 p-3"
+                    style="right: 0; left: 41:66%; background-color: var(--instagram-white); border-top: 1px solid var(--instagram-border);">
                     <div class="d-flex align-items-center w-100">
                         <!-- icone de emoki/smile -->
                         <i class="bi bi-emoji-smile me-3 fs-5 instagram-text-light"></i>
                         <!-- Campo de input da mensagem -->
-                        <input type="text" class="form-control chat-input rounded-pill flex-grow-1 py-2" placeholder="Mensagem..." style="border: 1px solid var(--instagram-border);">
+                        <input type="text" class="form-control chat-input rounded-pill flex-grow-1 py-2"
+                            placeholder="Mensagem..." style="border: 1px solid var(--instagram-border);">
                         <!-- icone de envio -->
                         <i class="bi bi-send ms-3 fs-5 instagram-blue"></i>
                     </div>
@@ -291,7 +302,7 @@
             </div>
         </div>
     </div>
-
+   
     <!-- Script do Bootstrap (JavaScript) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
