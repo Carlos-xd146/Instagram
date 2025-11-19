@@ -40,7 +40,7 @@ VALUES ('Ricardo', 'ricardo@gmail.com', '123', '(34) 91234-5678', 'ricardo.png',
 
     <div class="container">
         <?php
-        try {
+        try { 
 
             if (isset($_POST["SQLQuery"]) && $_POST["SQLQuery"]!= ""){
                 $textArea = $_POST["SQLQuery"];
