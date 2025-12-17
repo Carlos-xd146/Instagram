@@ -13,9 +13,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
-  
-  
-  
+
+
+
 </head>
 
 <body class="bg-light">
@@ -126,30 +126,58 @@
 
       <!-- Conteudo do modal -->
       <div class="modal-content">
+        <form method="">
+          <!-- Cabeçalho do modal -->
+          <!-- modal-header é a classe para o topo do modal -->
+          <div class="modal-header">
 
-        <!-- Cabeçalho do modal -->
-        <!-- modal-header é a classe para o topo do modal -->
-        <div class="modal-header">
+            <?php
+            // Criar conexao com banco de dados
+            // criando variaveis de texto
+            $nomeservidor = "localhost"; // onde o banco de dados esta? url?
+            $nomeusuario = "root"; // qual o usuario  do banco de dados?
+            $senha = ""; // qual a senha
+            $bancodados = "carlos_instagram"; // qual o nome do banco de <dados>
+            
+            // conectar ao banco
+            $conexao = new mysqli($nomeservidor, $nomeusuario, $senha, $bancodados);
 
-          <!-- titulo do modal -->
-          <!-- modal-title é a classe para o titulo -->
-          <h5 class="modal-title" id="criarPostModalLabel">
-            <!-- icone de camera -->
-            <i class="bi bi-camera"></i>
-            Criar Novo Post
-          </h5>
+            // verifica se a conexao
+            if ($conexao->connect_error) {
+              // para por aqui, nao funciona
+              die("Conexão falhou" . $conexao->connect_error);
+            }
 
-          <!-- Botao X para fechar o modal -->
-          <!-- btn-close é a classe do Bootstrap para o botao de fechar -->
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
+            // lendo o que o usuario digitou
+            if (isset($_POST['descricao'])) {
+              $descricao = $_POST['descricao'];
 
-        <!-- Corpo do modal -->
-        <!-- modal-body é onde fica o conteudo principal -->
-        <div class="modal-body">
+              // construir query (consulta)
+              $sql = "INSERT INTO post (descricao) VALUES ('$descricao')";
 
-          <!-- formulario para criar o post -->
-          <form>
+              // executar a consulta
+              $resposta = $conexao->query($sql);
+            }
+            ?>
+
+            <!-- titulo do modal -->
+            <!-- modal-title é a classe para o titulo -->
+            <h5 class="modal-title" id="criarPostModalLabel">
+              <!-- icone de camera -->
+              <i class="bi bi-camera"></i>
+              Criar Novo Post
+            </h5>
+
+            <!-- Botao X para fechar o modal -->
+            <!-- btn-close é a classe do Bootstrap para o botao de fechar -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+
+          <!-- Corpo do modal -->
+          <!-- modal-body é onde fica o conteudo principal -->
+          <div class="modal-body">
+
+            <!-- formulario para criar o post -->
 
             <!-- Campo para upload de imagem -->
             <!-- mb-3 adiciona margem na parte inferior -->
@@ -185,8 +213,8 @@
 
               <!-- Campo de texto grande (textarea) -->
               <!-- form-control é a classe padrao -->
-              <textarea id="descricao" class="form-control" id="legendaPost" rows="4"
-                placeholder="Escreva uma legenda para o seu post..."></textarea>
+              <textarea class="form-control" id="legendaPost" rows="4"
+                placeholder="Escreva uma legenda para o seu post..." name="descricao"></textarea>
 
               <!-- Texto de ajuda -->
               <div class="form-text text-muted">
@@ -231,29 +259,29 @@
                 <img id="imagemPrevia" src="" alt="Prévia" class="img-fluid rounded" style="max-height: 300px;">
               </div>
             </div>
-          </form>
-        </div>
+          </div>
 
-        <!-- Rodapé do modal -->
-        <!-- modal-footer é a classe para parte inferior -->
-        <div class="modal-footer">
+          <!-- Rodapé do modal -->
+          <!-- modal-footer é a classe para parte inferior -->
+          <div class="modal-footer">
 
-          <!-- Botao para cancelar -->
-          <!-- btn-secondary é um botao cinza -->
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            <!-- Icone de X -->
-            <i class="bi bi-x-circle"></i>
-            Cancelar
-          </button>
+            <!-- Botao para cancelar -->
+            <!-- btn-secondary é um botao cinza -->
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              <!-- Icone de X -->
+              <i class="bi bi-x-circle"></i>
+              Cancelar
+            </button>
 
-          <!-- Botao para publicar o post -->
-          <!-- btn-primary é um botao azul -->
-          <button type="button" id="btnPostSalvar" class="btn btn-primary">
-            <!-- Icone de check -->
-            <i class="bi bi-check-circle"></i>
-            Publicar Post
-          </button>
-        </div>
+            <!-- Botao para publicar o post -->
+            <!-- btn-primary é um botao azul -->
+            <button type="button" id="btnPostSalvar" class="btn btn-primary">
+              <!-- Icone de check -->
+              <i class="bi bi-check-circle"></i>
+              Publicar Post
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
